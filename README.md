@@ -19,11 +19,17 @@
 
 ## 视频地址
 
-java零基础实战入门教程，视频地址：https://space.bilibili.com/483744498/channel/seriesdetail?sid=2294270
+java零基础实战入门教程，视频合集地址：https://space.bilibili.com/483744498/channel/seriesdetail?sid=2294270
 
 ## 我的理念：代码不是靠看视频、靠记忆就能学会的，是要靠手去学会的！
 
-
+## 求关注
+<div align="center">
+<img src="./src/main/resources/images/wx-public-so.png" />
+<div>扫码关注微信公众号</div>
+</div>
+![微信搜一搜](src/main/resources/images/wx-public-so.png)
+![扫码关注微信公众号](src/main/resources/images/wx-public-qrcode.jpg)
 
 # 课件内容
 
