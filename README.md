@@ -25,7 +25,7 @@ java零基础实战入门教程，视频合集地址：https://space.bilibili.co
 
 ## 求关注
 <div align="center">
-<img style="width: 50%;" src="./src/main/resources/images/wx-public-so.png" />
+<img width="50%;" src="./src/main/resources/images/wx-public-so.png" />
 <div>扫码关注微信公众号</div>
 </div>
 
