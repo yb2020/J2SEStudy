@@ -24,8 +24,9 @@ java零基础实战入门教程，视频合集地址：https://space.bilibili.co
 ## 我的理念：代码不是靠看视频、靠记忆就能学会的，是要靠手去学会的！
 
 ## 求关注
+
 <div align="center">
-<img width="50%;" src="./src/main/resources/images/wx-public-so.png" />
+<img width="50%;" src="https://gitee.com/yb2020/J2SEStudy/raw/main/src/main/resources/images/wx-public-so.png" />
 <div>扫码关注微信公众号</div>
 </div>
 
