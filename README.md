@@ -80,7 +80,7 @@ java零基础实战入门教程，视频合集地址：https://space.bilibili.co
 4. 一维数组
 5. 全局变量、局部变量
 
-## Lesson 4 初识线程 视频地址
+## Lesson 4 初识线程 [视频地址](https://www.bilibili.com/video/BV1c34y1J75T)
 
 ### 课程内容
 
@@ -149,7 +149,7 @@ java零基础实战入门教程，视频合集地址：https://space.bilibili.co
 永远优先消除位置最低的字母
 
 
-## Lesson 7 小霸王学习机 视频地址
+## Lesson 7 160行实现简易的计算器 视频地址
 
 ### 课程内容
 
