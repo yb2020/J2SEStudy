@@ -1,4 +1,4 @@
-package com.gebilaoyi.j2se.lesson12;
+package com.gebilaoyi.j2se.lesson13;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,8 +11,8 @@ import java.awt.event.KeyListener;
  * J2SEStudy
  **/
 public class MyPanel extends JPanel implements KeyListener {
-    String[] text = new String[100];
-    int p = 0 ;
+    MyListInterface list = new MyArraylist(1000);
+
     int gb = 0 ;
     @Override
     public void paint(Graphics g) {
@@ -20,24 +20,23 @@ public class MyPanel extends JPanel implements KeyListener {
 
         int x = 0;
         int y = 20;
-        for(int i = 0 ; i < p; i ++) {
-            if(text[i].equals("\n")) {
+        for(int i = 0 ; i < list.size(); i ++) {
+            if(list.get(i).equals("\n")) {
                 x = 0;
                 y += 20;
             }else {
-                g.drawString(text[i], (x + 1) * 10, y);
+                g.drawString(list.get(i), (x + 1) * 10, y);
                 x ++ ;
             }
         }
-        if(gb < p) {
+        if(gb < list.size()) {
             x = 0;
             y =20;
             for(int i = 0 ; i < gb; i ++) {
-                if(text[i].equals("\n")) {
+                if(list.get(i).equals("\n")) {
                     x = 0;
                     y += 20;
                 }else {
-                    g.drawString(text[i], (x + 1) * 10, y);
                     x ++ ;
                 }
             }
@@ -55,26 +54,15 @@ public class MyPanel extends JPanel implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         if(e.getKeyCode() >= KeyEvent.VK_A && e.getKeyCode() <= KeyEvent.VK_Z) {
-            if(gb < p) {
-                //要插入
-                for(int i = p; i >= gb; i --) {
-                    text[i + 1] = text[i] ;
-                }
-                text[gb] = e.getKeyChar() + "";
-            }else{
-                text[p] = e.getKeyChar() + "";
-            }
-            p ++;
+            list.add(gb, e.getKeyChar() + "");
             gb ++;
         }
-        if(e.getKeyCode() == KeyEvent.VK_BACK_SPACE && p > 0) {
-            p --;
+        if(e.getKeyCode() == KeyEvent.VK_BACK_SPACE) {
+            list.remove(gb - 1);
             gb --;
-            text[p] = "";
         }
         if(e.getKeyCode() == KeyEvent.VK_ENTER) {
-            text[p] = "\n";
-            p ++;
+            list.add("\n");
             gb ++;
         }
         if(e.getKeyCode() == KeyEvent.VK_LEFT) {
@@ -83,7 +71,7 @@ public class MyPanel extends JPanel implements KeyListener {
             }
         }
         if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
-            if(gb < p) {
+            if(gb < list.size()) {
                 gb ++;
             }
         }
